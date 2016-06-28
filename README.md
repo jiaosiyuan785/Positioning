@@ -2,25 +2,25 @@
 ## 可以简单的使用百度和高德的定位
 ####百度定位
 ```Java
-new BaiDuLocation().location(this, 2, "bd09ll", 0, new BaiDuLocationInterFace() {<br/>
-            @Override<br/>
-            public void baidulocation(BaiDuLocationBean db) {<br/>
-                my_lat = db.getLatitude();<br/>
-                my_lng = db.getLontitude();<br/>
-                my_addr = db.getAddress();<br/>
-                Log.v("loction",db.toString());<br/>
+new BaiDuLocation().location(this, 2, "bd09ll", 0, new BaiDuLocationInterFace() {
+            @Override
+            public void baidulocation(BaiDuLocationBean db) {
+                my_lat = db.getLatitude();
+                my_lng = db.getLontitude();
+                my_addr = db.getAddress();
+                Log.v("loction",db.toString());
             }<br/>
         });<br/>
 ```
 ####高德定位
 ```Java
- new GaoDeLocation().location(this, 1, 0, new GaoDeLocationInterFace() {<br/>
+ new GaoDeLocation().location(this, 1, 0, new GaoDeLocationInterFace() {
             @Override<br/>
-            public void gaodeLocation(GaoDeLocationBean gb) {<br/>
-                my_lat = gb.getLatitude();<br/>
-                my_lng = gb.getLongitude();<br/>
-                my_addr = gb.getAddress();<br/>
-                Log.v("loction",gb.toString());<br/>
-            }<br/>
-        });<br/>
+            public void gaodeLocation(GaoDeLocationBean gb) {
+                my_lat = gb.getLatitude();
+                my_lng = gb.getLongitude();
+                my_addr = gb.getAddress();
+                Log.v("loction",gb.toString());
+            }
+        });
 ```
