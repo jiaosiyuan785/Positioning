@@ -9,8 +9,8 @@ new BaiDuLocation().location(this, 2, "bd09ll", 0, new BaiDuLocationInterFace() 
                 my_lng = db.getLontitude();
                 my_addr = db.getAddress();
                 Log.v("loction",db.toString());
-            }<br/>
-        });<br/>
+            }
+        });
 ```
 ####高德定位
 ```Java
