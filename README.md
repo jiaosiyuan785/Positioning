@@ -58,7 +58,7 @@
       <!--写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据-->
       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
 ```
-Android6.0及以上系统可以参考`[Android6.0权限说明章节](http://lbs.amap.com/api/android-location-sdk/guide/android-6-0-permission/#t1)
+`Android6.0及以上系统可以参考`[Android6.0权限说明章节](http://lbs.amap.com/api/android-location-sdk/guide/android-6-0-permission/#t1)
 ####百度定位
 ```Java
 new BaiDuLocation().location(this, 2, "bd09ll", 0, new BaiDuLocationInterFace() {
