@@ -1,7 +1,7 @@
 # 用于定位的一个简单的方法
 ## 可以简单的使用百度和高德的定位
 ####前期准备
-  首先，你需要申请key，[百度的在这里](http://lbsyun.baidu.com/apiconsole/key/create),[高德的在这里](http://lbs.amap.com/dev/#/)
+  首先，你需要申请key，[百度的在这里](http://lbsyun.baidu.com/apiconsole/key/create),[高德的在这里](http://lbs.amap.com/dev/#/)<br/>
 `然后你需要在AndroidManifest中做一些准备`
 #####百度AndroidManifest
 ######application中添加
@@ -31,16 +31,16 @@
        <uses-permission android:name="android.permission.INTERNET" />
        <!-- SD卡读取权限，用户写入离线定位数据-->
        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
-    ```
+```
 #####高德AndroidManifest
 ######application中添加
-    ```Java
+```xml
       <service android:name="com.amap.api.location.APSService"></service>
       <meta-data android:name="com.amap.api.v2.apikey" android:value="key">//开发者申请的key      
             </meta-data>
 ```
 ######application外添加权限
-    ```Java
+```xml
      <!--用于进行网络定位-->
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
 <!--用于访问GPS定位-->
@@ -57,7 +57,7 @@
 <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
 <!--写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据-->
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
-    ```
+```
     `Android6.0及以上系统可以参考`[Android6.0权限说明章节](http://lbs.amap.com/api/android-location-sdk/guide/android-6-0-permission/#t1)
 ####百度定位
 ```Java
