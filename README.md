@@ -6,10 +6,10 @@
 #####百度AndroidManifest
 ######application中添加
 ```xml
-      <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"></service>
-      <meta-data
-            android:name="com.baidu.lbsapi.API_KEY"
-            android:value="key" />       //key:开发者申请的key
+    <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"></service>
+    <meta-data
+          android:name="com.baidu.lbsapi.API_KEY"
+          android:value="key" />       //key:开发者申请的key
 ```
 ######application外添加权限
 ```xml
@@ -41,24 +41,24 @@
 ```
 ######application外添加权限
 ```xml
-     <!--用于进行网络定位-->
-<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
-<!--用于访问GPS定位-->
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
-<!--获取运营商信息，用于支持提供运营商信息相关的接口-->
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-<!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
-<!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
-<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
-<!--用于访问网络，网络定位需要上网-->
-<uses-permission android:name="android.permission.INTERNET"></uses-permission>
-<!--用于读取手机当前的状态-->
-<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
-<!--写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据-->
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+      <!--用于进行网络定位-->
+      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+      <!--用于访问GPS定位-->
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+      <!--获取运营商信息，用于支持提供运营商信息相关的接口-->
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+      <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+      <!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+      <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+      <!--用于访问网络，网络定位需要上网-->
+      <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+      <!--用于读取手机当前的状态-->
+      <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+      <!--写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据-->
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
 ```
-    `Android6.0及以上系统可以参考`[Android6.0权限说明章节](http://lbs.amap.com/api/android-location-sdk/guide/android-6-0-permission/#t1)
+Android6.0及以上系统可以参考`[Android6.0权限说明章节](http://lbs.amap.com/api/android-location-sdk/guide/android-6-0-permission/#t1)
 ####百度定位
 ```Java
 new BaiDuLocation().location(this, 2, "bd09ll", 0, new BaiDuLocationInterFace() {
