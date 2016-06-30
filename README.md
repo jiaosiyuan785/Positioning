@@ -2,17 +2,17 @@
 ## 可以简单的使用百度和高德的定位
 ####前期准备
   首先，你需要申请key，[百度的在这里](http://lbsyun.baidu.com/apiconsole/key/create),[高德的在这里](http://lbs.amap.com/dev/#/)
-####  `重点是你需要在AndroidManifest中做一些准备`
+`然后你需要在AndroidManifest中做一些准备`
 #####百度AndroidManifest
 ######application中添加
-    ```xml
+```xml
       <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"></service>
       <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="key" />       //key:开发者申请的key
 ```
 ######application外添加权限
-    ```Java
+```xml
        <!-- 这个权限用于进行网络定位-->
        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
        <!-- 这个权限用于访问GPS定位-->
