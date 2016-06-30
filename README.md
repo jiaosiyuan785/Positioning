@@ -5,7 +5,7 @@
 ####  `重点是你需要在AndroidManifest中做一些准备`
 #####百度AndroidManifest
 ######application中添加
-    ```Java
+    ```xml
       <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"></service>
       <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
